@@ -12,4 +12,5 @@ add_executable(conversion_a1
         .idea/vcs.xml
         .idea/workspace.xml
         main.cpp
-        main.h)
+        main.h
+        testing.h)
