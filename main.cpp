@@ -59,7 +59,7 @@ int main() {
         // write file
     // you want to open file BEFORE write file. So put a check before you write to the file
 
-    //TIPS from DAVID
+    //TIPS from instructor
     //1. build a series of things that are testable and actually work
     //2. Try to think ahead as to what would be a good prototype?
     //3.
