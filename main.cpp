@@ -5,10 +5,6 @@
 #include <regex>
 
 
-// TODO: - research criteria for valid Windows filename (running on mac is requirement)
-
-
-
 // Validate file name + path
 bool isValidFileName(const std::string& fileName) {
     //
@@ -20,7 +16,7 @@ bool isValidFileName(const std::string& fileName) {
 }
 
 bool isValidPath(const std::string& path) {
-    struct stat buffer;
+    struct stat buffer{};
     return (stat(path.c_str(), &buffer) == 0);
 }
 
@@ -43,16 +39,30 @@ int main() {
 
     std::string inputFilePath, outputFilePath;
 
+
     //TODO:
     // Get input file path
     //      Enter path of C++ source file (.cpp)
     // Validate input file path
+    // RESEARCH: File IO related exception handling (fallback -> exception e)
     // Get output filepath
     // Validate output
     // Open input and output files
     // Read input file, write to output file with conversions
     //TODO: figure out <pre> tags and how to write them to file
 
+
+    //
+    // EXCEPTION examples
+    //
+    // open file
+        // write file
+    // you want to open file BEFORE write file. So put a check before you write to the file
+
+    //TIPS from DAVID
+    //1. build a series of things that are testable and actually work
+    //2. Try to think ahead as to what would be a good prototype?
+    //3.
 
 
 
