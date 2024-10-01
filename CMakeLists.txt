@@ -13,4 +13,5 @@ add_executable(conversion_a1
         .idea/workspace.xml
         main.cpp
         main.h
-        testing.h)
+        testing.h
+        testing.cpp)

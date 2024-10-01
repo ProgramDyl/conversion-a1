@@ -1,3 +1,10 @@
 # ninja log v6
-10	507	7485494826290704	CMakeFiles/conversion_a1.dir/main.cpp.obj	12574e19df4580a7
-508	672	7485494831265390	conversion_a1.exe	4c38743946920f7c
+10	3320	7489133286048256	CMakeFiles/conversion_a1.dir/main.cpp.obj	12574e19df4580a7
+3320	4813	7489133319147378	conversion_a1.exe	4c38743946920f7c
+36	611	7494943253332103	CMakeFiles/conversion_a1.dir/testing.cpp.obj	e8160a7df2944355
+26	3987	7494943253237396	CMakeFiles/conversion_a1.dir/main.cpp.obj	12574e19df4580a7
+9	6517	7494955414270394	CMakeFiles/conversion_a1.dir/main.cpp.obj	12574e19df4580a7
+12	746	7494957879665138	CMakeFiles/conversion_a1.dir/testing.cpp.obj	e8160a7df2944355
+18	728	7494959350122509	CMakeFiles/conversion_a1.dir/testing.cpp.obj	e8160a7df2944355
+11	5561	7494959350050640	CMakeFiles/conversion_a1.dir/main.cpp.obj	12574e19df4580a7
+5562	8201	7494959405564223	conversion_a1.exe	180b4bc5f0090bc3

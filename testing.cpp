@@ -1,5 +1,10 @@
-//
-// Created by dylan on 2024-09-22.
-//
+//testing.cpp
+#include <iostream>
 
-#include "testing.h"
+int testing() {
+    std::cout << "Test successful! Output written to file! " << std::endl;
+    if (1 < 2) {
+        std::cout << "1 is less than 2" << std::endl;
+    }
+    return 0;
+}

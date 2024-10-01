@@ -56,6 +56,13 @@ build CMakeFiles/conversion_a1.dir/main.cpp.obj: CXX_COMPILER__conversion_a1_uns
   OBJECT_DIR = CMakeFiles\conversion_a1.dir
   OBJECT_FILE_DIR = CMakeFiles\conversion_a1.dir
 
+build CMakeFiles/conversion_a1.dir/testing.cpp.obj: CXX_COMPILER__conversion_a1_unscanned_Debug C$:/Users/dylan/NSCC/Semester$ 3/5-C++/assignments/conversion-a1/testing.cpp || cmake_object_order_depends_target_conversion_a1
+  DEP_FILE = CMakeFiles\conversion_a1.dir\testing.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/dylan/NSCC/Semester 3/5-C++/assignments/conversion-a1/."
+  OBJECT_DIR = CMakeFiles\conversion_a1.dir
+  OBJECT_FILE_DIR = CMakeFiles\conversion_a1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target conversion_a1
@@ -64,7 +71,7 @@ build CMakeFiles/conversion_a1.dir/main.cpp.obj: CXX_COMPILER__conversion_a1_uns
 #############################################
 # Link the executable conversion_a1.exe
 
-build conversion_a1.exe: CXX_EXECUTABLE_LINKER__conversion_a1_Debug CMakeFiles/conversion_a1.dir/main.cpp.obj
+build conversion_a1.exe: CXX_EXECUTABLE_LINKER__conversion_a1_Debug CMakeFiles/conversion_a1.dir/main.cpp.obj CMakeFiles/conversion_a1.dir/testing.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\conversion_a1.dir
