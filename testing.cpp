@@ -1,10 +1,11 @@
 //testing.cpp
+#include "testing.h"
 #include <iostream>
 
+using namespace std;
+
 int testing() {
-    std::cout << "Test successful! Output written to file! " << std::endl;
-    if (1 < 2) {
-        std::cout << "1 is less than 2" << std::endl;
-    }
+    cout << "Test successful! Output written to file! " << std::endl;
+    cout << "1 is less than 2" << std::endl;
     return 0;
 }

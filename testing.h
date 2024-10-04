@@ -6,9 +6,7 @@
 #define CONVERSION_A1_TESTING_H
 
 
-class testing {
-
-};
+int testing();
 
 
 #endif //CONVERSION_A1_TESTING_H
