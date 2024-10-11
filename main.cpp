@@ -1,11 +1,8 @@
 #include <iostream>
-#include <sys/stat.h>
 #include <string>
 #include <fstream>
 #include <regex>
-#include <stdexcept> // For library exceptions
 #include "main.h"
-#include "testing.h"
 
 using namespace std;
 
@@ -19,14 +16,17 @@ public:
 private:
     const char* msg_;
 };
-
-// Struct for programmer-created exception
+//
+// Struct for rubric -- programmer-created exception
 struct ExampleException {
     string message;
+    // constructor takes string reference and initializes struct msg variable
     ExampleException(const string& msg) : message(msg) {}
 };
 
 // Validate file name + path (Windows file name restrictions)
+
+//REGEX pattern pulled from : Co-Pilot
 bool isValidFileName(const string &fileName) {
     const regex pattern(R"(^[^<>:"/\\|?*\x00-\x1F]+$)");
     return regex_match(fileName, pattern) && fileName.length() <= 259;
@@ -35,15 +35,15 @@ bool isValidFileName(const string &fileName) {
 // Convert < and > symbols to HTML entities
 void convertSymbols(ifstream &fin, ofstream &fout) {
     try {
-//        cout << "convertSymbols function called" << endl; // Debug print
+//        cout << "convertSymbols function called" << endl; //<<Debug>> print
         string line;
         while (getline(fin, line)) {
             if (!fout.is_open()) throw CustomException("Failed to open output file.");
-//            cout << "Processing line: " << line << endl; // Debug print
+//            cout << "Processing line: " << line << endl; // <<Debug>> print
             line = regex_replace(line, regex("<"), "<");
             line = regex_replace(line, regex(">"), ">");
             fout << line << endl;
-//            cout << "Written line to output file: " << line << endl; // Debug print
+//            cout << "Written line to output file: " << line << endl; // <<Debug>> print
         }
     } catch (const CustomException& e) {
         cerr << "Custom Error: " << e.what() << endl;
@@ -100,7 +100,7 @@ void processFile(const string &inputFilePath, const string &outputFilePath) {
         cout << "Reading from input file: " << inputFilePath << endl;
         string line;
         while (getline(fin, line)) {
-//            cout << "Read line: " << line << endl; // Debug print
+//            cout << "Read line: " << line << endl; // <<Debug>> print
         }
         fin.clear(); // Clear EOF flag
         fin.seekg(0); // Rewind to the beginning of the file
@@ -153,9 +153,9 @@ int main() {
         }
 
         // Process the input file and generate the output file
-//        cout << "Calling processFile function" << endl; // Debug print
+//        cout << "Calling processFile function" << endl; // <<Debug>> print
         processFile(inputFilePath, outputFilePath);
-//        cout << "Finished processing file" << endl; // Debug print
+//        cout << "Finished processing file" << endl; // <<Debug>> print
         cout << "Test successful! Output written to file! " << std::endl;
         return 0;
 
